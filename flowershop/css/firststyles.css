@@ -1,0 +1,290 @@
+html {
+    background-color: lightyellow;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 87%;
+}
+h1 {
+    color: palevioletred;
+    text-align: center;
+}
+h2{
+    color: maroon;
+  
+   
+}
+p {
+    color: orange;
+    font-size: larger;
+    font-style: italic;
+    
+}
+
+
+header p {
+    color: darksalmon;
+}
+
+header p {
+color: plum;
+}
+
+.color {
+    background-color: yellow;
+}
+
+.container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: antiquewhite;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  box-sizing:border-box ;
+}
+.box {
+ 
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+
+.content-area {
+    border-top: 3px solid rgb(133, 22, 59);
+    border-bottom: 3px solid rgb(110, 169, 110)
+}
+.main {
+    width: 70%;
+    float: left;
+}
+aside{
+    color: burlywood;
+}
+.support {
+    width: 30%;
+    float: left;
+    background-color: lightgoldenrodyellow;
+    padding-left: 40px ;
+    padding-right: 40px;
+    box-sizing: border-box;
+    padding-top:20px;
+    padding-bottom: 20px;   
+
+}
+.fix {
+    clear: both;
+    border-bottom: 3px solid rgb(133, 22, 59);
+}
+/* Site Navigation */
+.site-nav li {
+    list-style: none;
+    float: left;
+    margin-right:  10px; ;
+}
+.site-nav ul{
+    margin: 0;
+    padding:0%;
+}
+.site-nav {
+    margin-top:20px ;
+}
+.site-nav a {
+    text-decoration: none;
+    color: rgb(210, 113, 78);
+    padding:10px 20px;
+    border:3px solid coral;
+    display: block;
+    border-bottom: none;
+}
+.site-nav a:hover{
+    background-color: antiquewhite;
+}
+/* End of Site Navigation */
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+/* banner overplay */
+.image-banner{
+    position: relative;
+    top: 50px;
+    left: 50px;
+    z-index:10 ;
+}
+.image-banner img{
+    display: block;
+}
+.banner-caption{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: palevioletred;
+    padding: 15px 25px;
+}
+.banner-caption p{
+    color: maroon
+}
+/* End of banner overplay */
+
+/* Table styles */
+table {
+    border-spacing:0% ;
+    border-collapse: collapse;
+    width: 80%;
+}
+table th {
+    text-align: left;
+    background-color: rgb(133, 22, 59);
+    color:antiquewhite;
+    text-shadow:1px 1px 0 palevioletred;
+}
+table th, table td{
+    border: 1px solid maroon;
+    padding: 10px;
+}
+table tbody tr:nth-child(even)td{
+    background-color: antiquewhite;
+}
+table th:nth-child(2),table th:nth-child(3),
+table td:nth-child(2),table td:nth-child(3) {
+    text-align:center;
+}
+/* End Table styles */
+
+/* Form Styles */
+
+input[type="email"], input[type="password"]{
+    width: 100%;
+    display:block;
+    box-sizing:border-box;
+    padding: 0 10px;
+    height: 40px;
+}
+form{
+    background-color: antiquewhite;
+    padding: 30px 40px;
+}
+.hidden-label {
+    position: absolute;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+input[type="submit"]{
+    width: 100%;
+    display:block;
+    box-sizing:border-box;
+    background-color: maroon;
+    color: aliceblue;
+    padding: 10px 0;
+    border: 1px solid maroon;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+input[type="submit"]:hover,
+input[type="submit"]:focus{
+    border: 1px solid palevioletred;
+    background-color: antiquewhite;
+}
+/* End Form styles */
+/* Typography */
+header h1{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 4px;
+    text-shadow: 2px 10px 1px rgb(238, 232, 209) ;
+}
+/* Media Query */
+@media screen and (max-width:700px) {
+   .site-nav li{
+    width: 50%;
+    margin-right: 0;
+   }
+   .site-nav a {
+    padding: 20px 0;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    border: 3px solid antiquewhite;
+   }
+}
+@media screen and (max-width:480px) {
+    .site-nav li{
+     width: 70%;
+     margin-right: 0;
+    }
+    .site-nav a {
+        padding: 20px 0;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        text-align: center;
+        border: 3px solid antiquewhite;
+}
+}
+/*Slideshow*/
+.image-banner {
+    position: relative;
+    top: 0px;
+    left: 200px;
+    z-index: 10;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+.imahe-banener img {
+    display: block;
+}
+.cycle-slideshpw {
+    margin-bottom: 30px;
+    width: 100%;
+    padding-bottom:30px ;
+    box-sizing: border-box;
+}
+.slide-text {
+    position: absolute;
+    bottom: -10;
+    background-color:antiquewhite ;
+    color: black;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.slide-text h3 {
+    margin: 0;
+    color: maroon;
+}
+.slide-text p{
+    color: maroon;
+}
+/*End of slideshow*/
+/* Previous and Next */
+.cycle-prev, .cycle-next {
+    position: absolute;
+    width: 20%;
+    top: 30%;
+    background-color:rgb(133, 22, 59);
+    color: antiquewhite;
+    padding: 1px 10px;
+    display: block;
+    cursor: pointer;
+    font-size: 130%;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity .5s;
+}
+.cycle-next{
+    right: 0;
+}
+.cycle-slideshow:hover .cycle-prev,
+.cycle-slideshow:hover .cycle-next {
+    opacity: 1;
+}
+
+/*End Previous and Next */
